@@ -25,9 +25,9 @@ describe('<App />', () => {
   });
 
   it('calls getDogs when button is clicked', () => {
-    const getWeather = sinon.spy();
+    const getDogs = sinon.spy();
     const wrapper = shallow(<Inputs getDogs={getDogs} />);
     wrapper.find('form').simulate('submit');
-    expect(getWeather).toHaveProperty('callCount', 1);
+    expect(getDogs).toHaveProperty('callCount', 1);
   })
 });
