@@ -41,11 +41,19 @@ class App extends React.Component {
 
     parseDogNames = (urls) => {
         return Object.values(urls).map((url) => {
+            let outputString = "";
             let dogBreed = url.split("/");
-            dogBreed = dogBreed[4].replace("-", " ");
-            dogBreed = dogBreed.charAt(0).toUpperCase() + dogBreed.slice(1);
+            dogBreed = dogBreed[4];
+            dogBreed = dogBreed.split("-");
 
-            return dogBreed;
+            for (let i=dogBreed.length - 1; i>=0; i--)
+            {
+                outputString += dogBreed[i] + " ";
+            }
+
+            outputString = outputString.charAt(0).toUpperCase() + outputString.slice(1)
+
+            return outputString;
         });
     }
 
