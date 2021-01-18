@@ -17,7 +17,7 @@ ul {
 }
 
 li img {
-  float: left;
+  float: center;
   margin: 0 2em 0 0;
   flex-grow: 1;
 }
