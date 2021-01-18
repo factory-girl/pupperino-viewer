@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(assets/Roboto-Regular.ttf);
+}
+
+body, html {
+    font-family: 'Roboto', serif;
+}
+
 input[type=text] {
   background: transparent;
   border-style: solid;
@@ -17,7 +26,6 @@ ul {
 }
 
 li img {
-  float: center;
   margin: 0 2em 0 0;
   flex-grow: 1;
 }
@@ -42,6 +50,10 @@ button {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+}
+
+header {
+  background-color: coral;
 }
 
 @media screen and (max-width: 812px) {

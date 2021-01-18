@@ -41,7 +41,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### Rough time summary
 
-Setup and configuration: 5 mins. As the the readme says this project was bootstrapped through Create React App which sets up a basic app template for you. That code was committed in a separate commit to see what was provided.
+Setup and configuration: 5 mins. As the the readme says this project was bootstrapped through Create React App which sets up a basic app template for you. That code was committed in a separate commit to show what was provided.
 
 Coding: A couple hours. This is my first time in a long time creating a React app so there were a few things that I was a little rusty on. I jogged my memory by looking at other apps and created this Pupperino viewer.
 
