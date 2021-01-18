@@ -41,7 +41,6 @@ class App extends React.Component {
 
     parseDogNames = (urls) => {
         return Object.values(urls).map((url) => {
-            debugger
             let dogBreed = url.split("/");
             dogBreed = dogBreed[4].replace("-", " ");
             dogBreed = dogBreed.charAt(0).toUpperCase() + dogBreed.slice(1);
@@ -59,7 +58,7 @@ class App extends React.Component {
           <Inputs getDogs={this.getDogs}/>
           <Pupperinos dogImages={this.state.dogImages}
                 dogNames={this.state.dogNames}
-            error={this.state.error}/>
+                error={this.state.error}/>
         </div>
     );
   }
