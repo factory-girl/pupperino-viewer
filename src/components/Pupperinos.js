@@ -11,7 +11,7 @@ class Pupperinos extends React.Component{
                     { this.props.dogImages && Object.values(dogImages).map((image, index) => {
                         return <li key={ index }>
                             <img src={image} alt="doggo"/>
-                            { this.props.dogNames[index] }
+                            <p>{ this.props.dogNames[index] }</p>
                             </li>;
                         })
                     }
